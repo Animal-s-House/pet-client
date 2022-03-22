@@ -110,9 +110,9 @@
   },
   "dependencies": {
     "@mui/system": "^5.4.4",
+    "@types/json2csv": "^5.0.3",
     "@types/react-js-pagination": "^3.0.4",
     "@types/react-virtualized": "^9.21.20",
-    "@types/json2csv": "^5.0.3",
     "autobind-decorator": "^2.4.0",
     "axios": "^0.26.0",
     "classnames": "^2.3.1",
@@ -128,5 +128,4 @@
     "react-router-dom": "^6.2.2",
     "react-virtualized": "^9.22.3"
   }
-
 }
