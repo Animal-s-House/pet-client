@@ -4,8 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "webpack-dev-server --config ./conf/webpack-development.conf.js --progress"
+    "build": "webpack --config ./conf/webpack-production.conf.js --progress",
+    "test": "jest test --config ./conf/jest.conf.js",
+    "check": "jest --config ./conf/jest.conf.js",
+    "test:cell": "jest --config ./conf/jest.conf.js cell",
+    "coverage": "jest test --config ./conf/coverage.conf.js",
+    "serve": "webpack-dev-server --config ./conf/webpack-development.conf.js --progress",
+    "lint": "eslint ./src/**/*.{js,ts,jsx,tsx}",
+    "lint:fix": "eslint --fix ./src/**/*.{js,ts,jsx,tsx}",
+    "lint:scss": "stylelint src/**/*.{css,scss} --syntax scss",
+    "lint:scss:fix": "stylelint src/**/*.{css,scss} --syntax scss --fix",
+    "check-types": "tsc",
+    "check-types:watch": "tsc --watch",
+    "clean": "rm -rf ./node_modules && rm ./package-lock.json && npm cache clear --force"
   },
   "author": "",
   "license": "ISC",
