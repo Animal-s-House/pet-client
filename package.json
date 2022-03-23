@@ -109,7 +109,6 @@
     "autobind-decorator": "^2.4.0",
     "axios": "^0.26.0",
     "classnames": "^2.3.1",
-    "json2csv": "^5.0.7",
     "mobx": "^6.4.2",
     "mobx-react-lite": "^3.3.0",
     "qs": "^6.10.3",

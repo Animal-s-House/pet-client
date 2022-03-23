@@ -19,7 +19,7 @@ def enum(*sequential, **named):
 STATUS = enum('TITLE', 'DESC', 'IMS', 'MSG_FORM')
 commit_msg = '''[[Your Commit Message]]'''
 title_msg = '''%s[type] title message 를 적어주세요%s
-%s[type] 종류 : [feat], [fix], [docs], [refactor], [test], [chore], [style]%s
+%s[type] 종류 : [feat], [fix], [docs], [refactor], [test], [chore]%s
 %stitle은 최소 한글자 이상 입력 되어야 합니다.%s
 %sex) [feat] 신규 기능 추가%s
 ''' % (yellow, no_color, yellow, no_color, yellow, no_color, yellow, no_color)
@@ -61,7 +61,7 @@ def reject(arg, arg2):
 
 #################################################################################
 #prefix type
-prefix_list = ['[feat]', '[fix]', '[docs]', '[refactor]', '[test]', '[chore]', '[style]']
+prefix_list = ['[feat]', '[fix]', '[docs]', '[refactor]', '[test]', '[chore]']
 prefix_ims = '[IMS]'
 #################################################################################
 
