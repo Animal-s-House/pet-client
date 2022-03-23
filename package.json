@@ -16,7 +16,8 @@
     "lint:scss:fix": "stylelint src/**/*.{css,scss} --syntax scss --fix",
     "check-types": "tsc",
     "check-types:watch": "tsc --watch",
-    "clean": "rm -rf ./node_modules && rm ./package-lock.json && npm cache clear --force"
+    "clean": "rm -rf ./node_modules && rm ./package-lock.json && npm cache clear --force",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
@@ -68,7 +69,7 @@
     "fscreen": "^1.2.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "i18next": "^21.6.12",
     "i18next-browser-languagedetector": "^6.1.3",
     "i18next-http-backend": "^1.3.2",
@@ -99,14 +100,6 @@
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "./hooks/commit-msg $HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged --config ./conf/lint-staged.conf.js && ./hooks/pre-commit",
-      "prepare-commit-msg": "./hooks/prepare-commit-msg $HUSKY_GIT_PARAMS",
-      "pre-push": "npm test"
-    }
   },
   "dependencies": {
     "@mui/system": "^5.4.4",
